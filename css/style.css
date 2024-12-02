@@ -1,0 +1,210 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+@font-face {
+  font-family: "MBDemonicTale";
+  src: local(MBDemonicTale),
+    url(../fonts/MBDemonicTale.woff2) format("woff2"),
+    url(../fonts/MBDemonicTale.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FortunaGothicFlorishC";
+  src: local(FortunaGothicFlorishC),
+    url(../fonts/FortunaGothicFlorishC.woff2) format("woff2"),
+    url(../fonts/FortunaGothicFlorishC.woff) format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  font-family: "FortunaGothicFlorishC", sans-serif;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 1440px;
+  height: 865px;
+  padding: 20px 50px;
+  background-image: url(../image.png);
+  background-color: rgb(173, 171, 171);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  background-image: linear-gradient(90deg, black -60%, transparent 120%);
+}
+
+.timer,
+.card,
+.btn {
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}
+
+.timer {
+  width: 80px;
+  height: 80px;
+  margin-left: auto;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+  color: black;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 1px 1px 0 black;
+  background-image: radial-gradient(#ff0000, black);
+}
+
+.game {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1000px;
+  margin: 0;
+  padding: 0;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 150px;
+  padding: 20px;
+  background-image: linear-gradient(#faeb2c, #ff0000 45%, black 95%);
+  font-family: "MBDemonicTale";
+  font-size: 0;
+  color: transparent;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 black;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.card:hover {
+  background-image: linear-gradient(#faeb2c, black);
+}
+
+.card:active {
+  background-image: linear-gradient(#ff0000, black);
+}
+
+.open {
+  font-size: 80px;
+  color: black;
+  background-image: radial-gradient(#ff0000, black);
+  cursor: default;
+}
+
+.open:hover {
+  background-image: radial-gradient(#ff0000, black);
+}
+
+.open:active {
+  background-image: radial-gradient(#ff0000, black);
+}
+
+.success {
+  font-size: 100px;
+  color: black;
+  cursor: default;
+  background-image: radial-gradient(#74ee15, black);
+  cursor: default;
+}
+
+.success:hover {
+  background-image: radial-gradient(#74ee15, black);
+}
+
+.success:active {
+  background-image: radial-gradient(#74ee15, black);
+}
+
+.btn {
+  max-width: 280px;
+  min-height: 80px;
+  padding: 10px;
+  text-align: center;
+  font-size: 30px;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  background-image: radial-gradient(#faeb2c, #ff0000, black);
+  box-shadow: 1px 1px 0 black;
+  transition: background-image 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-image: radial-gradient(#faeb2c, black);
+}
+
+.btn:active {
+  background-image: radial-gradient(#74ee15, black);
+}
+
+@media(max-width: 630px) {
+  .container {
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .timer {
+    width: 50px;
+    height: 50px;
+    padding: 5px;
+    font-size: 35px;
+  }
+
+  .game {
+    gap: 5px;
+  }
+
+  .card {
+    padding: 10px;
+  }
+
+  .open {
+    font-size: 40px;
+  }
+
+  .success {
+    font-size: 50px;
+  }
+
+  .btn {
+    max-width: 250px;
+    padding: 5px 10px;
+    font-size: 25px;
+  }
+}
