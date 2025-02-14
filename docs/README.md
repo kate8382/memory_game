@@ -17,6 +17,18 @@ A video by Alexander Dudukalo ([YouTube Link](https://www.youtube.com/watch?v=L3
 - Timer to track the time taken to complete the game
 - Responsive design
 
+## Access the Game
+
+You can play the game online through GitHub Pages:
+
+[Play Memory Game](https://EkaterinaSevciuc.github.io/memory_game/)
+
+## View the Code
+
+You can view and clone the source code from the GitHub repository:
+
+[View Source Code](https://github.com/EkaterinaSevciuc/memory_game)
+
 ## Installation
 
 To run the Memory Game locally, follow these steps:
