@@ -36,3 +36,8 @@ To run the Memory Game locally, follow these steps:
 1. Clone the repository:
    ```bash
    git clone https://github.com/EkaterinaSevciuc/memory_game.git
+
+## License
+This project is licensed under the MIT License - see the  [LICENSE](https://github.com/EkaterinaSevciuc/memory_game/blob/main/docs/LICENSE) file for details.
+
+  
