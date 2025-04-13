@@ -1,7 +1,7 @@
 (() => {
   'use strict'
 
-  const sizeMin = window.matchMedia('(max-width: 630px)');
+  const sizeMin = window.matchMedia('(max-width: 630px)'); // Минимальный размер экрана
   const container = document.querySelector('.container');
   const game = document.getElementById('game');
   const button = document.querySelector('.btn');
@@ -178,10 +178,3 @@
     };
   });
 })();
-
-
-
-
-
-
-

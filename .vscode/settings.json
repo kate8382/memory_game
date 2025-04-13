@@ -1,0 +1,13 @@
+{
+  "files.exclude": {
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true
+  },
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "css.validate": true,
+  "javascript.validate.enable": true,
+  "liveServer.settings.port": 5500,
+  "liveServer.settings.root": "/"
+}
